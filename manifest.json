@@ -1,7 +1,7 @@
 {
-	"name": "ControlStadia",
+	"name": "CloudGamepad",
 	"version": "0.0.3",
-	"description": "ControlStadia allows arbitrary mapping of input devices to a \"standard\" virtual input controller which works with Stadia!",
+	"description": "CloudGamepad allows arbitrary mapping of input devices to a \"standard\" virtual input controller which works with many cloud services!",
 	"background": {
 		"scripts": ["background.js"],
 		"persistent": false
@@ -34,7 +34,7 @@
 				"https://luna.amazon.com/*",
 				"https://stadia.google.com/*"
 			],
-			"js": ["controlstadia.js"],
+			"js": ["cloudgamepad.js"],
 			"run_at": "document_start"
 		}
 	],

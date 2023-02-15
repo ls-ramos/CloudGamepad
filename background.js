@@ -35,7 +35,7 @@ chrome.runtime.onInstalled.addListener(function() {
             startParams[key] = settings[key];
         }
         chrome.storage.sync.set(startParams, function() {
-            console.log("ControlStadia: Set start params!");
+            console.log("CloudGamepad: Set start params!");
         });
     });
 });

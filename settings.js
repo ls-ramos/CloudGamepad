@@ -9,7 +9,7 @@ const resetButtonElem = document.getElementById("reset-button");
 const gamepadRefreshButtonElem = document.getElementById("gamepad-refresh-button");
 const gamepadSelectElem = document.getElementById("gamepad-select");
 const controlListElem = document.getElementById("control-list");
-const disableControlStadiaElem = document.getElementById("disable-controlstadia");
+const disableCloudGamepadElem = document.getElementById("disable-cloudgamepad");
 const findingJoysticksElem = document.getElementById("finding-joysticks");
 
 let axesDefault = [
@@ -75,7 +75,7 @@ const populateGamepadSelect = function(){
     }else{
         setTimeout(populateGamepadSelect, 500);
     }
-    console.log("ControlStadia: Refreshed gamepad list!");
+    console.log("CloudGamepad: Refreshed gamepad list!");
 }
 
 const makeLabelString = function(type, index){
@@ -123,10 +123,10 @@ chrome.storage.sync.get([
     "firstRun",
     "axes",
     "buttons",
-    "disableControlStadia"
+    "disableCloudGamepad"
 ], function(settings) {
 
-    disableControlStadiaElem.checked = settings.disableControlStadia;
+    disableCloudGamepadElem.checked = settings.disableCloudGamepad;
 
     if(settings.firstRun){
         settingsElem.style.display = "none";
@@ -143,7 +143,7 @@ chrome.storage.sync.get([
         firstRunNotificationElem.style.display = "none";
         settingsElem.style.display = "initial";
         chrome.storage.sync.set({"firstRun": false}, function(){
-            console.log("ControlStadia: First run completed!");
+            console.log("CloudGamepad: First run completed!");
         });
     }
 
@@ -151,10 +151,10 @@ chrome.storage.sync.get([
         const options = {
             axes: axes,
             buttons: buttons,
-            disableControlStadia: disableControlStadiaElem.checked
+            disableCloudGamepad: disableCloudGamepadElem.checked
         };
         chrome.storage.sync.set(options, function(){
-            console.log("ControlStadia: Set options!");
+            console.log("CloudGamepad: Set options!");
             chrome.tabs.reload();
         });
     }
@@ -169,7 +169,7 @@ chrome.storage.sync.get([
         resetAxesAndButtons();
         chrome.tabs.reload();
         window.location.href = window.location.href;
-        console.log("TouchStadia: Reset button config!");
+        console.log("CloudGamepad: Reset button config!");
     }
 
     const populateControlList = function(){
@@ -228,7 +228,7 @@ chrome.storage.sync.get([
         for(let i = 0; i < axes.length; i++){
             createControl(1, i);
         }
-        console.log("ControlStadia: Populated control list!");
+        console.log("CloudGamepad: Populated control list!");
     }
     populateControlList();
 });
