@@ -2,9 +2,9 @@ function main(){
 	let config = null;
 	window.addEventListener("startConfig", function(e) {
 		config = e.detail;
-		setupCS();
+		setupCloudGamepad();
 	}, false);
-	const setupCS = function(){
+	const setupCloudGamepad = function(){
 		console.log("CloudGamepad: Injected!");
 		console.log(config);
 		const buttonCount = 17;

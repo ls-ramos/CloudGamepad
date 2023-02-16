@@ -1,6 +1,6 @@
 {
 	"name": "CloudGamepad",
-	"version": "0.0.3",
+	"version": "0.0.1",
 	"description": "CloudGamepad allows arbitrary mapping of input devices to a \"standard\" virtual input controller which works with many cloud services!",
 	"background": {
 		"scripts": ["background.js"],
@@ -9,10 +9,10 @@
 	"page_action": {
 		"default_popup": "settings.html",
 		"default_icon": {
-			"16": "img/cs-16.png",
-			"32": "img/cs-32.png",
-			"48": "img/cs-48.png",
-			"128": "img/cs-128.png"
+			"16": "img/cloudgamepad-16.png",
+			"32": "img/cloudgamepad-32.png",
+			"48": "img/cloudgamepad-48.png",
+			"128": "img/cloudgamepad-128.png"
 		  }
 	},
 	"content_scripts": [
@@ -43,10 +43,10 @@
 		"declarativeContent"
 	],
 	"icons": {
-		"16": "img/cs-16.png",
-		"32": "img/cs-32.png",
-		"48": "img/cs-48.png",
-		"128": "img/cs-128.png"
+		"16": "img/cloudgamepad-16.png",
+		"32": "img/cloudgamepad-32.png",
+		"48": "img/cloudgamepad-48.png",
+		"128": "img/cloudgamepad-128.png"
 	},
 	"manifest_version": 2
 }
