@@ -1,8 +1,8 @@
 ![CloudGamepad logo](/img/cloudgamepad-128.png?raw=true "CloudGamepad logo")
 # CloudGamepad
-TODO: Deploy to edge and chrome and update the links
-[CloudGamepad in Chrome Web Store](https://chrome.google.com/webstore/detail/cloudgamepad)
-[CloudGamepad in Edge Web Store](https://chrome.google.com/webstore/detail/cloudgamepad
+[CloudGamepad in Chrome Web Store]()
+
+[CloudGamepad in Edge Web Store]()
 
 CloudGamepad is a Chrome and Edge Extension which allows arbitrary mapping of input devices to a "standard" virtual input controller which works with many cloud computing services!
 
@@ -14,8 +14,8 @@ With CloudGamepad, you can:
 * Do ridiculous things like playing Borderlands 3 with a flight yoke and throttle quadrant!
 
 ## Usage
-TODO: Update links
-Simply install the extension [on Chrome](https://chrome.google.com/webstore/detail/cloudgamepad) or [on Edge](https://chrome.google.com/webstore/detail/cloudgamepad) and open or refresh the cloud service you want to use! Click the extension icon to configure your virtual joypad.
+
+Simply install the extension [on Chrome]() or [on Edge]() and open or refresh the cloud service you want to use! Click the extension icon to configure your virtual joypad.
 
 Once the extension menu is open, it should automatically look for any joysticks plugged into your PC. If none show up, try pressing a button or moving a stick on one.
 
