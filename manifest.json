@@ -1,7 +1,7 @@
 {
 	"name": "CloudGamepad",
 	"version": "0.0.1",
-	"description": "CloudGamepad allows arbitrary mapping of input devices to a \"standard\" virtual input controller which works with many cloud services!",
+	"description": "CloudGamepad allows arbitrary mapping of input devices to a \"standard\" virtual controller which works with many cloud services!",
 	"background": {
 		"scripts": ["background.js"],
 		"persistent": false
