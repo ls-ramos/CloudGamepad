@@ -80,17 +80,5 @@ function main(){
 			return [emulatedGamepad, null, null, null];
 		}
 	}
-} 
-
-chrome.storage.sync.get([
-	"axes",
-	"buttons",
-	"disableCloudGamepad"
-], function(settings) {
-	settings.extUrl = chrome.runtime.getURL("/");
-	if(settings.disableCloudGamepad) return;
-	const injScript = document.createElement("script");
-	injScript.appendChild(document.createTextNode("(" + main + ")();"));
-	(document.body || document.head || document.documentElement).appendChild(injScript);
-	window.dispatchEvent(new CustomEvent("startConfig", {detail: settings}));
-});
+}
+main()

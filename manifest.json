@@ -1,20 +1,41 @@
 {
 	"name": "CloudGamepad",
 	"version": "0.0.1",
-	"description": "CloudGamepad allows arbitrary mapping of input devices to a \"standard\" virtual controller which works with many cloud services!",
+	"description": "Remap the keys of your gamepad on the browser. It works in many cloud gamining services.",
 	"background": {
-		"scripts": ["background.js"],
-		"persistent": false
+			"service_worker": "background.js"
 	},
-	"page_action": {
+	"action": {
 		"default_popup": "settings.html",
 		"default_icon": {
 			"16": "img/cloudgamepad-16.png",
 			"32": "img/cloudgamepad-32.png",
 			"48": "img/cloudgamepad-48.png",
 			"128": "img/cloudgamepad-128.png"
-		  }
+		}
 	},
+	"web_accessible_resources":[
+		{
+			"resources": ["cloudgamepad.js"],
+			"matches": [
+				"https://gamepad-tester.com/*",
+				"https://gamepad.e7d.io/*",
+				"https://cloud.boosteroid.com/*",
+				"https://www.xbox.com/*",
+				"https://play.geforcenow.com/*",
+				"https://shadow.tech/*",
+				"https://www.paperspace.com/*",
+				"https://parsec.app/*",
+				"https://www.nvidia.com/*",
+				"https://playkey.net/*",
+				"https://www.netboom.com/*",
+				"https://www.blacknut.com/*",
+				"https://www.furioos.com/*",
+				"https://luna.amazon.com/*",
+				"https://stadia.google.com/*"
+			]
+		}
+	],
 	"content_scripts": [
 		{
 			"matches": [
@@ -34,7 +55,7 @@
 				"https://luna.amazon.com/*",
 				"https://stadia.google.com/*"
 			],
-			"js": ["cloudgamepad.js"],
+			"js": ["content.js"],
 			"run_at": "document_start"
 		}
 	],
@@ -43,10 +64,10 @@
 		"declarativeContent"
 	],
 	"icons": {
-		"16": "img/cloudgamepad-16.png",
+    "16": "img/cloudgamepad-16.png",
 		"32": "img/cloudgamepad-32.png",
 		"48": "img/cloudgamepad-48.png",
 		"128": "img/cloudgamepad-128.png"
-	},
-	"manifest_version": 2
+  },
+	"manifest_version": 3
 }
