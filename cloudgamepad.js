@@ -2,16 +2,16 @@ function main(){
 	let config = null;
 	window.addEventListener("startConfig", function(e) {
 		config = e.detail;
-		setupCS();
+		setupCloudGamepad();
 	}, false);
-	const setupCS = function(){
-		console.log("ControlStadia: Injected!");
+	const setupCloudGamepad = function(){
+		console.log("CloudGamepad: Injected!");
 		console.log(config);
 		const buttonCount = 17;
 		const axisCount = 4;
 
 		const emulatedGamepad = {
-			id: "ControlStadia emulated gamepad",
+			id: "CloudGamepad emulated gamepad",
 			index: 0,
 			connected: true,
 			timestamp: 0,
@@ -42,7 +42,7 @@ function main(){
 					}
 				}
 			}
-			console.log("ControlStadia: Gamepad indicies found!");
+			console.log("CloudGamepad: Gamepad indicies found!");
 			indicesFound = true;
 		}
 		
@@ -80,17 +80,5 @@ function main(){
 			return [emulatedGamepad, null, null, null];
 		}
 	}
-} 
-
-chrome.storage.sync.get([
-	"axes",
-	"buttons",
-	"disableControlStadia"
-], function(settings) {
-	settings.extUrl = chrome.runtime.getURL("/");
-	if(settings.disableControlStadia) return;
-	const injScript = document.createElement("script");
-	injScript.appendChild(document.createTextNode("(" + main + ")();"));
-	(document.body || document.head || document.documentElement).appendChild(injScript);
-	window.dispatchEvent(new CustomEvent("startConfig", {detail: settings}));
-});
+}
+main()
