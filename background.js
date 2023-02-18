@@ -18,9 +18,9 @@ chrome.runtime.onInstalled.addListener(function() {
 				"luna.amazon.com",
                 "stadia.google.com"
             ].map(hostEquals => (
-                [new chrome.declarativeContent.PageStateMatcher({
+                new chrome.declarativeContent.PageStateMatcher({
                         pageUrl: {hostEquals},
-                })]
+                })
             )),
             actions: [new chrome.declarativeContent.ShowPageAction()]
         }]);

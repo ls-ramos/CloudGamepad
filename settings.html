@@ -2,14 +2,15 @@
     <head>
         <style>
             body {
-                width: 350px;
+                min-width: 350px;
+                max-width: 500px;
                 text-align: center;
                 margin: 0;
             }
             .logo-container {
                 margin-bottom: 4px;
                 color: #ffffff;
-                background-color: #2ab5ff;
+                background-color: #5e2fbd;
                 padding: 10px;
             }
             .option {
@@ -25,6 +26,13 @@
             .map-button-disabled {
                 pointer-events: none;
                 background-color: #aaa;
+            }
+            .target-label {
+                font-size: 18px;
+                font-weight: bold;
+            }
+            #settings{
+                padding: 12px;
             }
         </style>
     </head>
@@ -46,7 +54,7 @@
                     <button type="button" id="gamepad-refresh-button">Refresh gamepads</button>
                 </div>
                 <div class="option">
-                    <label for="gamepad-select">Select target gamepad</label>
+                    <label for="gamepad-select" class="target-label">Select target gamepad</label>
                     <select id="gamepad-select"></select>
                 </div>
                 <table class="control-table">
