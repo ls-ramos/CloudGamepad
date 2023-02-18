@@ -3,15 +3,17 @@ chrome.storage.sync.get([
 	"buttons",
 	"disableCloudGamepad"
 ], function(settings) {
-	
-	if(settings.disableCloudGamepad) return;
+	window.addEventListener('DOMContentLoaded', (event) => {
+		if(settings.disableCloudGamepad) return;
 
-	const injScript = document.createElement("script");
-	injScript.src = chrome.runtime.getURL('cloudgamepad.js');
-	injScript.onload = function () {
-		console.log("Script loaded! sending event now")
-		window.dispatchEvent(new CustomEvent("startConfig", {detail: settings}));
-	}
+		const injScript = document.createElement("script");
+		injScript.src = chrome.runtime.getURL('cloudgamepad.js');
+		injScript.onload = function () {
+			window.dispatchEvent(new CustomEvent("startConfig", {detail: settings}));
+		}
+		
+		const container = document.body || document.head || document.documentElement
+		container.appendChild(injScript);
+	});
 	
-	(document.body || document.head || document.documentElement).appendChild(injScript);
 });
