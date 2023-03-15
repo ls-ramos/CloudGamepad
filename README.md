@@ -15,7 +15,7 @@ With CloudGamepad, you can:
 
 ## Usage
 
-Simply install the extension [on Chrome]() or [on Edge]() and open or refresh the cloud service you want to use! Click the extension icon to configure your virtual joypad.
+Simply install the extension [on Chrome](https://chrome.google.com/webstore/detail/cloudgamepad/jjkloeoacnmjeojgohgpjbnljanejblp) or [on Edge](https://microsoftedge.microsoft.com/addons/detail/cloudgamepad/mmjbaaknbhegejcbnldpogkbmfllknmg) and open or refresh the cloud service you want to use! Click the extension icon to configure your virtual joypad.
 
 Once the extension menu is open, it should automatically look for any joysticks plugged into your PC. If none show up, try pressing a button or moving a stick on one.
 
