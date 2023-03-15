@@ -1,8 +1,8 @@
 ![CloudGamepad logo](/img/cloudgamepad-128.png?raw=true "CloudGamepad logo")
 # CloudGamepad
-[CloudGamepad in Chrome Web Store]()
+[CloudGamepad in Chrome Web Store](https://chrome.google.com/webstore/detail/cloudgamepad/jjkloeoacnmjeojgohgpjbnljanejblp)
 
-[CloudGamepad in Edge Web Store]()
+[CloudGamepad in Edge Web Store](https://microsoftedge.microsoft.com/addons/detail/cloudgamepad/mmjbaaknbhegejcbnldpogkbmfllknmg)
 
 CloudGamepad is a Chrome and Edge Extension which allows arbitrary mapping of input devices to a "standard" virtual input controller which works with many cloud computing services!
 
