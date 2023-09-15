@@ -1,6 +1,6 @@
 {
 	"name": "CloudGamepad",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Remap the keys of your gamepad on the browser. It works in many cloud gamining services.",
 	"background": {
 			"service_worker": "background.js"
