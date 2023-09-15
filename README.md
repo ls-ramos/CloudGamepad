@@ -27,6 +27,12 @@ The "Offset" field will add a constant value to the input.
 
 CloudGamepad has manifest permissions to run on [gamepad-tester.com](https://gamepad-tester.com) and [gamepad.e7d.io](https://gamepad.e7d.io) where you can view the output values of the virtual controller. I highly recommend setting up your virtual controller while on one of these pages!
 
+## Testing the configuration
+CloudGamepad has manifest permissions to run on the following test website:
+
+- https://www.hexgaming.com/pages/gamepadtester
+- https://gamepad.e7d.io/
+
 ## Cloud services supported
 CloudGamepad has manifest permissions to run on the following websites:
 
