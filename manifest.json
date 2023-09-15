@@ -19,6 +19,7 @@
 			"resources": ["cloudgamepad.js"],
 			"matches": [
 				"https://gamepad-tester.com/*",
+				"https://hexgaming.com/*",
 				"https://gamepad.e7d.io/*",
 				"https://cloud.boosteroid.com/*",
 				"https://www.xbox.com/*",
@@ -40,6 +41,7 @@
 		{
 			"matches": [
 				"https://gamepad-tester.com/*",
+				"https://hexgaming.com/*",
 				"https://gamepad.e7d.io/*",
 				"https://cloud.boosteroid.com/*",
 				"https://www.xbox.com/*",
