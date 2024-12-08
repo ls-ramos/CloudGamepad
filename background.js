@@ -2,8 +2,9 @@ chrome.runtime.onInstalled.addListener(function() {
     chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
         chrome.declarativeContent.onPageChanged.addRules([{
             conditions: [
-				"gamepad-tester.com",
+                "hardwaretester.com",
                 "hexgaming.com",
+                "www.hexgaming.com",
 				"gamepad.e7d.io",
 				"cloud.boosteroid.com",
                 "www.xbox.com",
