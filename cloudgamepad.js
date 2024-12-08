@@ -55,7 +55,7 @@ function main(){
 					if(gamepadFound) findGamepadIndices(originalGamepads);
 				}
 				
-				for(let i = 0; i < 17; i++){
+				for(let i = 0; i < buttonCount; i++){
 					if(typeof config.buttons[i] === "undefined" || typeof config.buttons[i].gamepadIndex === "undefined") continue;
 					const selectedConfigButton = config.buttons[i];
 					const gamepadIndex = selectedConfigButton.gamepadIndex;
@@ -69,7 +69,7 @@ function main(){
 					}
 					emulatedGamepad.timestamp = originalGamepads[gamepadIndex].timestamp;
 				}
-				for(let i = 0; i < 4; i++){
+				for(let i = 0; i < axisCount; i++){
 					if(typeof config.axes[i] === "undefined" || typeof config.axes[i].gamepadIndex === "undefined") continue;
 					const selectedConfigAxis = config.axes[i];
 					const gamepadIndex = selectedConfigAxis.gamepadIndex;
