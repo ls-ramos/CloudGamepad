@@ -1,6 +1,6 @@
 {
 	"name": "CloudGamepad",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "Remap the keys of your gamepad on the browser. It works in many cloud gamining services.",
 	"background": {
 			"service_worker": "background.js"
@@ -18,8 +18,9 @@
 		{
 			"resources": ["cloudgamepad.js"],
 			"matches": [
-				"https://gamepad-tester.com/*",
+				"https://hardwaretester.com/*",
 				"https://hexgaming.com/*",
+				"https://www.hexgaming.com/*",
 				"https://gamepad.e7d.io/*",
 				"https://cloud.boosteroid.com/*",
 				"https://www.xbox.com/*",
@@ -40,8 +41,9 @@
 	"content_scripts": [
 		{
 			"matches": [
-				"https://gamepad-tester.com/*",
+				"https://hardwaretester.com/*",
 				"https://hexgaming.com/*",
+				"https://www.hexgaming.com/*",
 				"https://gamepad.e7d.io/*",
 				"https://cloud.boosteroid.com/*",
 				"https://www.xbox.com/*",
