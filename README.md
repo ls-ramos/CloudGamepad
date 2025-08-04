@@ -30,7 +30,7 @@ CloudGamepad has manifest permissions to run on [gamepad-tester.com](https://gam
 ## Testing the configuration
 CloudGamepad has manifest permissions to run on the following test website:
 
-- https://www.hexgaming.com/pages/gamepadtester
+- https://hardwaretester.com/gamepad
 - https://gamepad.e7d.io/
 
 ## Cloud services supported
@@ -48,7 +48,6 @@ CloudGamepad has manifest permissions to run on the following websites:
 - https://www.blacknut.com
 - https://www.furioos.com
 - https://luna.amazon.com
-- https://stadia.google.com
 
 This does not mean that the extension was tested in each of these sites. At the moment the extension was mostly tested in XboxCloud.
 
